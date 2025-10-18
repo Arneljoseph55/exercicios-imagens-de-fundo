@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resumo do Código</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            /* COMBINADO: 
+               1. Um gradiente preto semitransparente (overlay: rgba(0,0,0,0.5)) 
+               2. A imagem de fundo (url('sua-imagem.jpg')) 
+            */
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('imagens/wallpaper002.jpg') center center no-repeat;
+
+            /* Ajustes para a imagem */
+            background-size: cover;
+
+            /* Estilos para o texto */
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px black;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>Título no Fundo</h1>
+    <p>Legibilidade melhorada com o overlay diretamente no background do body.</p>
 </body>
+
 </html>
